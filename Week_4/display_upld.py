@@ -9,7 +9,7 @@ def display():
 def upload():
     if request.method == 'POST':
         f = request.files['datafile']
-        f.save('static/uploads/upload.png')
+        f.save('static/uploads/file.png')
         return "File Uploaded"
     else:
         page='''
